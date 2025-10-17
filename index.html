@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solomen Design Studio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero">
+        <nav class="top-nav">
+            <div class="logo">Solomen Designs Studio</div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <div id="postdiv">
+            <img id="heroimg" src="./images/cr2.png" alt="Designer Image" />
+            <h1 class="scrolling-text">Solomen Design Studio</h1>
+        </div>
+
+        <nav class="side-nav">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/sulaiman-kuttasseri/" target="_blank">
+                        <img src="./images/linkedin.png" alt="LinkedIn" class="icon" /> LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/_solomen_designs/" target="_blank">
+                        <img src="./images/instagram.png" alt="Instagram" class="icon" /> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/solomendesignstudio" target="_blank">
+                        <img src="./images/facebook.png" alt="Facebook" class="icon" /> Facebook
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- ================= INTRO SECTION ================= -->
+    <section id="intro">
+        <div class="intro-content">
+            <h1 class="intro-text">
+                I'm a <span style="color: black;">graphic designer who helps brands turn ideas into sharp
+                    visuals.</span>
+                I focus on clarity, speed, and thoughtful design.
+            </h1>
+            <p class="intro-subtext">
+                Bringing your vision to life quickly and efficiently—whether it's branding,
+                social media, or web design. Delivering clean, effective visuals from start to finish.
+            </p>
+            <button class="intro-btn"><a href="https://www.behance.net/SULAIMANKUTTASSERI">See My Work</a></button>
+        </div>
+    </section>
+
+    <!-- ================= SERVICES SECTION ================= -->
+    <section id="services">
+        <p id="ser">Services</p>
+        <div class="services-container">
+            <div class="services-left">
+                <h1 id="service-count">01</h1>
+            </div>
+
+            <div class="services-right">
+                <div class="scroll-text-btn scroll-up"><span>Scroll Up</span>
+                    <div class="arrow">▲</div>
+                </div>
+
+                <div class="service active" data-index="1">
+                    <h2>Brand Identity Design</h2>
+                    <p>I create cohesive brand systems that connect your mission with a visual language that stands out.
+                    </p>
+                </div>
+
+                <div class="service" data-index="2">
+                    <h2>User interface Designing</h2>
+                    <p>Modern, responsive websites and web apps with focus on clarity, conversion, and storytelling.</p>
+                </div>
+
+                <div class="service" data-index="3">
+                    <h2>Social Media & Marketing</h2>
+                    <p>Engaging designs that bring life to your brand on all major platforms and campaigns.</p>
+                </div>
+
+                <div class="service" data-index="4">
+                    <h2>Packaging & Print</h2>
+                    <p>From concept to final product — clean, bold packaging and marketing materials that sell visually.
+                    </p>
+                </div>
+                <div class="service" data-index="4">
+                    <h2>Logo Designing</h2>
+                    <p>A great brand starts with a great logo — I design creative, memorable logos that tell your story.
+                    </p>
+                </div>
+                <div class="service" data-index="4">
+                    <h2>Brouchures</h2>
+                    <p>I design creative, well-structured brochures that capture attention and communicate your message
+                        clearly
+                    </p>
+                </div>
+                <div class="service" data-index="4">
+                    <h2>Flyers</h2>
+                    <p>Creative, bold, and impactful flyers — designed to promote your brand, event, or product with
+                        style.
+                    </p>
+                </div>
+                <div class="service" data-index="4">
+                    <h2>Catalogue</h2>
+                    <p>Transform your brand’s story into a stunning visual catalogue that captivates customers and
+                        drives sales.
+                    </p>
+                </div>
+
+                <div class="scroll-text-btn scroll-down"><span>Scroll Down</span>
+                    <div class="arrow">▼</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="experience-container">
+        <div class="experience-header">
+            <h1>Professional Experience</h1>
+            <p>9+ Years of Graphic Design Excellence</p>
+        </div>
+
+        <div class="timeline">
+            <!-- Timeline Center Line -->
+            <div class="timeline-line"></div>
+
+            <!-- Experience Item 1 - Left -->
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Graphic Designer</h3>
+                            <span class="company-badge">Deline Technologies</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="location"><span class="fa-solid fa-location-dot"></span> Kakkancheri, India</span>
+                            <span class="duration"><span class="fa-solid fa-calendar">&nbsp;&nbsp</span> 2018 - 2020</span>
+                        </div>
+                        <p class="description">Started professional journey as a graphic designer, building foundational
+                            skills in visual design and brand identity.</p>
+                        <div class="learn-more">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Item 2 - Right -->
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Graphic Designer</h3>
+                            <span class="company-badge">ECH Digital</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="location"><span class="fa-solid fa-location-dot"></span> UAE</span>
+                            <span class="duration"><span class="fa-solid fa-calendar">&nbsp;&nbsp</span>2020 - 2025</span>
+                        </div>
+                        <p class="description">Advanced expertise in digital design, working on international projects
+                            with diverse creative challenges and innovation.</p>
+                        <div class="learn-more">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Item 3 - Left -->
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="content-card">
+                        <div class="card-header">
+                            <h3>Graphic Designer</h3>
+                            <span class="company-badge">Exi Shark</span>
+                        </div>
+                        <div class="card-meta">
+                            <span class="location"><span class="fa-solid fa-location-dot"></span> UAE</span>
+                            <span class="duration"><span class="fa-solid fa-calendar">&nbsp;&nbsp</span>Present</span>
+                        </div>
+                        <p class="description">Leading creative initiatives with 9+ years of professional experience in
+                            visual storytelling and brand design.</p>
+                        <div class="learn-more">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-badge">
+            <span class="badge-text">9+ Years</span>
+            <span class="badge-subtitle">of expertise in graphic design</span>
+        </div>
+    </div>
+
+    <hr>
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <h2 class="contact-title">Quick Contact</h2>
+                    <p class="contact-subtitle">Get in touch with us for your next project or collaboration</p>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand Section -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Solomon Design Studio</h3>
+                    <p class="footer-description">Creating beautiful digital experiences and innovative design solutions
+                        for modern brands.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/_solomen_designs/" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sulaiman-kuttasseri/" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.behance.net/SULAIMANKUTTASSERI" class="social-icon" aria-label="Behance">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="https://www.facebook.com/solomendesignstudio" class="social-icon" aria-label="Dribbble">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4 class="footer-title">Services</h4>
+                    <ul>
+                        <li><a href="#branding">Branding</a></li>
+                        <li><a href="#ui-ux">UI/UX Design</a></li>
+                        <li><a href="#web">Logo</a></li>
+                        <li><a href="#web">Flyer</a></li>
+                        <li><a href="#web">Brouchers</a></li>
+                        <li><a href="#graphics">Graphics Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <p class="contact-info">
+                        <span class="label">Email:</span><br>
+                        <a href="mailto:contact@solomondesignstudio.com">contact@solomondesignstudio.com</a>
+                    </p>
+                    <p class="contact-info">
+                        <span class="label">Phone:</span><br>
+                        <a href="tel:+1234567890">+91 7567576495</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Solomon Design Studio. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span class="divider">|</span>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="./scripts/exp.js"></script>
+    <script src="./scripts/service.js"></script>
+    <script src="./scripts/introscroll.js"></script>
+    <script src="./scripts/navscript.js"></script>
+</body>
+
+</html>
