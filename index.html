@@ -29,7 +29,7 @@
             <div class="menu">
                 <a href="#home">Home</a>
                 <a href="#intro">About</a>
-                <a href="#intro">Portfolio</a>
+                <a href="#projects">Portfolio</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -44,7 +44,7 @@
             <img id="heroimg" src="./images/portrait_solo-removebg-preview (2).png" alt="Designer Image" />
             <h1 class="scrolling-text">Solomen</h1>
             <span id="scroll-span">Design Studio</span>
-            
+
         </div>
 
         <nav class="side-nav">
@@ -149,6 +149,55 @@
         </div>
     </section>
 
+    <!-- Project -->
+    <section class="projects-teaser" id="project" aria-labelledby="projects-heading">
+        <div class="container">
+            <h2 id="projects-heading">Projects</h2>
+
+
+            <div class="teaser-inner">
+                <div class="teaser-text">
+                    <p class="lead">I craft visual stories that connect — from bold brand systems to refined print
+                        pieces.</p>
+
+
+                    <!-- Rotating sentences (JS will update .dynamic-sentence) -->
+                    <p class="dynamic-sentence" aria-live="polite">Curating high-impact visuals for brands that want to
+                        be remembered.</p>
+
+
+                    <p class="support">No gallery here — just a clear invitation. Click the button to view selected work
+                        in a focused space.</p>
+
+
+                    <div class="cta-row">
+                        <a class="btn primary" target="_blank" href="https://www.behance.net/SULAIMANKUTTASSERI">See my projects</a>
+                        <a class="btn ghost" href="#contact"  >Let's collaborate</a>
+                    </div>
+                </div>
+
+
+                <div class="teaser-visual" aria-hidden="true">
+                    <!-- Decorative abstract visual built with CSS shapes. Keeps section interesting without showing projects. -->
+                    <div class="visual">
+                        <span class="shape shape-1"></span>
+                        <span class="shape shape-2"></span>
+                        <span class="shape shape-3"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sentences-list" hidden>
+                <!-- Sentences used by JS to rotate text. Edit or add lines as you like. -->
+                <span>Designing visual systems that turn attention into action.</span>
+                <span>Branding with strategy — pixels with purpose.</span>
+                <span>From concept to craft: premium prints, strong identities.</span>
+                <span>Meaningful design that reads quickly and lingers longer.</span>
+                <span>Strategic typography and bold color to tell your brand's story.</span>
+            </div>
+        </div>
+    </section>
 
     <div class="experience-container">
         <div class="experience-header">
@@ -170,8 +219,10 @@
                             <span class="company-badge">Deline Technologies</span>
                         </div>
                         <div class="card-meta">
-                            <span class="location"><span class="fa-solid fa-location-dot"></span> Kakkancheri, India</span>
-                            <span class="duration"><span class="fa-solid fa-calendar">&nbsp;&nbsp</span> 2018 - 2020</span>
+                            <span class="location"><span class="fa-solid fa-location-dot"></span> Kakkancheri,
+                                India</span>
+                            <span class="duration"><span class="fa-solid fa-calendar">&nbsp;&nbsp</span> 2018 -
+                                2020</span>
                         </div>
                         <p class="description">Started professional journey as a graphic designer, building foundational
                             skills in visual design and brand identity.</p>
@@ -196,7 +247,8 @@
                         </div>
                         <div class="card-meta">
                             <span class="location"><span class="fa-solid fa-location-dot"></span> UAE</span>
-                            <span class="duration"><span class="fa-solid fa-calendar">&nbsp;&nbsp</span>2020 - 2025</span>
+                            <span class="duration"><span class="fa-solid fa-calendar">&nbsp;&nbsp</span>2020 -
+                                2025</span>
                         </div>
                         <p class="description">Advanced expertise in digital design, working on international projects
                             with diverse creative challenges and innovation.</p>
@@ -280,19 +332,22 @@
                     <p class="footer-description">Creating beautiful digital experiences and innovative design solutions
                         for modern brands.</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/_solomen_designs/" class="social-icon" aria-label="Instagram">
+                        <a href="https://www.instagram.com/_solomen_designs/" class="social-icon"
+                            aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="#" class="social-icon" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/sulaiman-kuttasseri/" class="social-icon" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/sulaiman-kuttasseri/" class="social-icon"
+                            aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="https://www.behance.net/SULAIMANKUTTASSERI" class="social-icon" aria-label="Behance">
                             <i class="fab fa-behance"></i>
                         </a>
-                        <a href="https://www.facebook.com/solomendesignstudio" class="social-icon" aria-label="Dribbble">
+                        <a href="https://www.facebook.com/solomendesignstudio" class="social-icon"
+                            aria-label="Dribbble">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </div>
@@ -350,6 +405,7 @@
 
     <!-- ================= SCRIPTS ================= -->
     <script src="./scripts/exp.js"></script>
+    <script src="./scripts/project.js"></script>
     <script src="./scripts/service.js"></script>
     <script src="./scripts/introscroll.js"></script>
     <script src="./scripts/navscript.js"></script>
