@@ -471,7 +471,7 @@ html {
 
 
 .projects-teaser {
-    padding: 72px 0;
+    padding: 12px 0;
     background-color: rgb(20, 20, 20);
     padding-bottom: 0;
 }
@@ -515,7 +515,7 @@ html {
 .support {
     color: white;
     font-family: 'Poppins';
-    /* margin-bottom: 18px; */
+    margin-bottom: 18px;
     margin-top: 20px;
 }
 .sentences-list[hidden] {
@@ -526,7 +526,7 @@ html {
 
 .cta-row {
     display: flex;
-    /* gap: 12px; */
+    gap: 12px;
     margin-bottom: 0 !important;
     flex-wrap: wrap
 }
