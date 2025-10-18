@@ -651,7 +651,7 @@ cursor: pointer;
 
 .experience-header h1 {
     font-size: 3rem;
-    background: purple;
+    background: rgb(153, 4, 153);
     font-family: 'Raleway';
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
