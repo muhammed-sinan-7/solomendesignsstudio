@@ -147,8 +147,8 @@ html {
         background-color: white;
     }
 }
+/* --- CSS for Bounce-Up Animation --- */
 
-/* ------------------- SCROLLING TEXT ------------------- */
 .scrolling-text-container {
     position: absolute;
     top: 50%;
@@ -264,9 +264,10 @@ html {
 }
 
 /* ------------------- INTRO SECTION ------------------- */
+/* Your original CSS for layout */
 #intro {
     background-color: purple;
-    color: white;
+    color: white; /* Base color for un-clipped text/elements */
     opacity: 0.9;
     padding: 100px 10%;
     min-height: 100vh;
@@ -275,8 +276,6 @@ html {
     justify-content: center;
     overflow: hidden;
 }
-
-
 
 .intro-content {
     max-width: 1000px;
@@ -291,7 +290,9 @@ html {
     letter-spacing: -0.5px;
     font-family: "Poppins", sans-serif;
     margin-bottom: 40px;
+    /* Remove 'position: a;' as it's invalid. Assuming you meant 'position: relative;' or nothing. */
 }
+
 
 .intro-subtext {
     font-size: 1rem;
@@ -323,7 +324,55 @@ html {
     background: #ffffff10;
     border-color: white;
 }
+/* --- Animation CSS Addition --- */
 
+/* --- NEW Animation Keyframes for a more dramatic 'Show-Up' --- */
+@keyframes dramaticSlideInUp {
+    from {
+        opacity: 0;
+        /* Increased starting distance for more noticeable slide */
+        transform: translateY(100px) scale(0.95); 
+    }
+    to {
+        opacity: 1;
+        /* End at original size and position */
+        transform: translateY(0) scale(1); 
+    }
+}
+
+/* --- Initial State (Hidden) --- */
+.intro-text,
+.intro-subtext,
+.intro-btn {
+    /* Initially hide the elements */
+    opacity: 0;
+    /* Necessary for the transition to look right */
+    transform: translateY(0) scale(1); 
+}
+
+/* --- Triggered State (On Reach) --- */
+#intro.animate-in .intro-text,
+#intro.animate-in .intro-subtext,
+#intro.animate-in .intro-btn {
+    animation-name: dramaticSlideInUp;
+    animation-duration: 1.2s; /* Slightly longer duration for the dramatic effect */
+    animation-fill-mode: forwards;
+    /* Snappier easing for more "pop" */
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+/* --- Staggered Delays (Keep these for the sequenced effect) --- */
+#intro.animate-in .intro-text {
+    animation-delay: 0s; 
+}
+
+#intro.animate-in .intro-subtext {
+    animation-delay: 0.15s; /* Reduced delay for quicker overall appearance */
+}
+
+#intro.animate-in .intro-btn {
+    animation-delay: 0.3s; /* Reduced delay for quicker overall appearance */
+}
 /* ------------------- SERVICES SECTION ------------------- */
 #services {
     background-color: #0a0a0a;
@@ -633,6 +682,30 @@ html {
     background-color: rgb(17, 17, 17);
 cursor: pointer;
 }
+/* === Scroll Reveal Animation (added) === */
+/* Scroll Reveal Animation */
+.work-item {
+  transform: translateY(60px) scale(0.98) translateZ(0);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* When element enters view */
+.work-item.visible {
+  transform: translateY(0) scale(1) translateZ(0);
+  opacity: 1;
+}
+
+/* Optional: smoothly hide when leaving */
+.work-item.hide {
+  transform: translateY(60px) scale(0.98);
+  opacity: 0;
+}
+
+
 
 /* Exp */
 .experience-container {
@@ -1352,8 +1425,10 @@ cursor: pointer;
     }
 
     #intro {
-        padding-bottom: 0 !important;
-        margin-bottom: 0 !important;
+     padding-top: 15%; /* Use a reasonable amount, not 0 */
+        padding-bottom: 50px;
+        /* Ensure min-height does not force extra space if content is short */
+        min-height: auto;
     }
 
     .intro-text {
@@ -1384,6 +1459,7 @@ cursor: pointer;
     #services {
         padding: 60px 5%;
         flex-direction: column;
+        min-height: auto;
     }
 
     #ser {
