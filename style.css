@@ -618,12 +618,17 @@ html {
     font-size: 1.2rem;
     border-radius: 50px;
     font-family: 'poppins';
-    color:  rgb(255, 255, 255);
     background-color: transparent;
     border: 1px solid  rgb(153, 4, 153);
     transition: all 0.3s ease-in-out;
 
 }
+#allpro a{
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+
+}
+#allpro 
 #allpro:hover{
     background-color: rgb(17, 17, 17);
 cursor: pointer;
@@ -1571,20 +1576,29 @@ cursor: pointer;
     .item-6 {
         grid-column: span 1;
         grid-row: span 1;
+        transform: scale(90%);
+        
     }
-    .item-1,
-    .item-2,
-    .item-3,
-    .item-4,
-    .item-5,
-    .item-6
-    :hover{
-        transform: scale(85%);
+    .item-1:hover{
+        transform: scale(90%);
+    }
+    .item-2:hover{
+        transform: scale(90%);
+    }
+    .item-3:hover{
+        transform: scale(90%);
+    }
+    .item-4:hover{
+        transform: scale(90%);
+    }
+    .item-5:hover{
+        transform: scale(90%);
     }
     .item-6:hover{
-        transform: scale(85%);
-
+        transform: scale(90%);
     }
+   
+    
     .work-info {
         bottom: 20px;
         left: 20px;
